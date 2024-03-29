@@ -62,8 +62,13 @@ void q_short(int low, int high) {
         if (i < j) {
             swap(low, j);
         }
+        q_short(low, j - 1);
+
+        q_short(j + 1, high);
     }
 }
+
+
 
 
 
